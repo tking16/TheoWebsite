@@ -1,39 +1,81 @@
+@keyframes navAnim{
+    0% {top:0px;}
+    50% {top:-30px}
+    100%{top:-40px;}
+}
+
+.upperSect #navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navBarItems{
+    display: inline;
+    float: right;
+    padding: 1px;
+}
+#navBar #navBarItems:hover{
+animation-name: navAnim;
+    animation-duration: 4s; 
+    position: relative;
+}
+
 h1 {
-    font-family: "Impact", monospace, sans-serif;
-    text-align: center;
-    font-size: 75px;
+font-family: 'Candal', sans-serif;
+    font-size: 135px;
     text-transform: uppercase;
     padding: inherit;
 }
 
+.upperSect {
+    background-color: skyblue;
+    background-image: url(blue.jpg);
+    height: 400px;
+}
+
+#photo{
+    height: 250px;
+    float: right;
+    border-radius: 50%;
+}
+
 html {
-    font-family: "Lucida Sans Unicode", monospace, sans-serif;
-    background-color: #FF9933;
-        text-align: justify;
-    
+    font-family: "Lucida Sans Unicode",               monospace, sans-serif;
+    text-align: justify;
+    background-color: white;
 }
 
-.personalDetails{
-    text-align: center;
-    background-color: #FFA347
-}
-
-#statement {
-    background-color: #FFA347
-        
+.personalDetails{  
+    clear: both
 }
 
 section {
-    background-color: #FFA347;
+    background-color: lightblue;
     border-bottom: 1px solid white
     
 }
 
 .subHeadings {
-    background-color: #CC7A29;
+    background-color: mediumseagreen;
+    display: block;
+}
+#socialMedia img{
+    height: 120px;
+    width: auto;
 }
 
-.sidebar {
-float: right;
-background-color: beige;
+.contact {
+    background-color: grey
+}
+#socialMedia {
+    background-color: grey
+}
+
+/*Responsive*/
+
+@media screen and (min-width: ) {
+    section {
+        background-color: red;
+    }    
 }

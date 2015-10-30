@@ -1,0 +1,39 @@
+h1 {
+    font-family: "Impact", monospace, sans-serif;
+    text-align: center;
+    font-size: 75px;
+    text-transform: uppercase;
+    padding: inherit;
+}
+
+html {
+    font-family: "Lucida Sans Unicode", monospace, sans-serif;
+    background-color: #FF9933;
+        text-align: justify;
+    
+}
+
+.personalDetails{
+    text-align: center;
+    background-color: #FFA347
+}
+
+#statement {
+    background-color: #FFA347
+        
+}
+
+section {
+    background-color: #FFA347;
+    border-bottom: 1px solid white
+    
+}
+
+.subHeadings {
+    background-color: #CC7A29;
+}
+
+.sidebar {
+float: right;
+background-color: beige;
+}

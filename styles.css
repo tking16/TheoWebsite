@@ -6,8 +6,8 @@
 
 @keyframes photoAnim {
     0%{left: -1000px}
-    25%{left: -400}
-    75%{left: -50}
+    25%{left: -600px}
+    75%{left: -400px}
     100%{left: 0px}
 }
 .topBar{
@@ -16,6 +16,10 @@
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
 }
 
 .upperSect #navBar{
@@ -54,6 +58,7 @@ font-family: 'Candal', sans-serif;
     animation-delay: 3s;
     animation-duration: 3s;
     animation-fill-mode:forwards;
+    max-height: auto;
     
     
 }
@@ -74,6 +79,7 @@ font-family: 'Candal', sans-serif;
 }
 
 html {
+    max-width: 100%;
     font-family: "Lucida Sans Unicode",               monospace, sans-serif;
     text-align: justify;
     background-color: white;
@@ -108,7 +114,7 @@ section {
 
 /*Responsive*/
 
-@media screen and (min-width: 500%) {
+@media screen and (max-width: 50%) {
     section {
         background-color: red;
     }    

@@ -10,6 +10,20 @@
     75%{left: -400px}
     100%{left: 0px}
 }
+
+#container {
+    height: auto;
+}
+
+html {
+    position: relative;
+    height: auto;
+    font-family: "Lucida Sans Unicode",               monospace, sans-serif;
+    text-align: justify;
+    background-color: white;
+}
+
+
 .topBar{
     background-color: black;
     color: green;
@@ -26,6 +40,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 60%;
 }
 
 #navBarItems{
@@ -35,7 +50,9 @@
     font-weight: bold;
     color: white;
     background-color: darkblue;
-    height: 30px;
+    height: 30%;
+    width: auto;
+    display: inline-block;
     transition: height 0.15s, ease-out
 }
 
@@ -78,13 +95,6 @@ font-family: 'Candal', sans-serif;
     animation-duration: 4s;
 }
 
-html {
-    max-width: 100%;
-    font-family: "Lucida Sans Unicode",               monospace, sans-serif;
-    text-align: justify;
-    background-color: white;
-}
-
 .personalDetails{  
     clear: both
 }
@@ -92,7 +102,6 @@ html {
 section {
     background-color: lightblue;
     border-bottom: 1px solid white;
-    max-width: 100%;
     
 }
 
@@ -114,8 +123,77 @@ section {
 
 /*Responsive*/
 
-@media screen and (max-width: 50%) {
+@media screen and (max-width: 650px) {
     section {
         background-color: red;
-    }    
+    } 
+    #photo{
+        float: left;
+        position: relative;
+        left: 140px
+    }
+    .subHeadings {
+        text-align: center;
+    }
+    
+        .topBar{
+        text-align: center;
+    }
+    
+    h1{
+        position: relative;
+        left: 120px;
+        font-size: 110px;
+    }
+    
+ .upperSect #navBar{
+        width: 100%;
+     position: relative;
+     top: -80px;
+     height: 100px;
+    }
+    
+ #navBarItems{
+     padding: 2px;
+     font-size: 32px;
+     height: 80px;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+    #photo {
+        height: 130px;
+        position: relative;
+        left: 100px;
+    }
+    
+    section {
+        background-color: midnightblue;
+    }
+    .subHeadings {
+        font-size: 25px;
+    }
+    h1{
+        font-size: 110px;
+        position: relative;
+        left: 30px;
+    }
+    .topBar{
+        text-align: center;
+    }
+     .upperSect #navBar{
+        min-width: 100%;
+     position: relative;
+     top: -80px;
+     height: 250px;
+    }
+    
+     #navBarItems{
+     padding: 2px;
+     font-size: 20px;
+     height: 80px;
+        
+}
+
 }
